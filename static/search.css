@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(51, 51, 51);
+}
+nav
+{
+    position: relative;
+}
+nav .nav-bar
+{
+    width: 90%;
+    height: 50px;
+    background-color: gray;
+    float: right;
+    opacity: .8;
+    margin-left: auto;
+}
+nav .nav-bar .login
+{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+.login .search
+{
+    border-radius: 10px;   
+    margin-left: 5%;
+    width: 22%;
+    background-color: white;
+    justify-content: space-around;
+    display: flex;
+}
+.login .search input
+{   
+    border-radius: 10px;  
+    height: 30px;
+    background-color: white;
+    width: 140%;
+    border: none;
+}
+.login .search input:enabled
+{
+    border: none;
+}
+.search input ::placeholder
+{
+    font-style: italic;
+    margin-left: 10px;
+}
+.login .search span
+{
+    margin-right: 4px;
+    margin-top:7px;
+}
+.login .search i
+{
+    cursor: pointer;
+}
+.login ul
+{
+    list-style: none;
+}
+.login ul li a
+{
+    text-decoration: none;
+}
+.login .signup
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: 300px;
+}
+.login .signup:hover
+{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    transition: .3s;
+}
+.login .btn
+{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login .btn:hover
+{
+    background-color:rgb(212, 212, 212) ;
+    color: rgb(87, 87, 87);
+    font-size: 17px;
+    transition: .3s;
+}
+.nav-links
+{  
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    width: 275px;
+    height: 1220px;
+}
+.nav-links .logo
+{
+    margin: 12px;
+    width:35px;
+    height: 35px;
+}
+.nav-links .app
+{
+    top: 20%;
+    position: absolute;
+    left: 31%;
+    color: rgb(255, 255, 255);
+    font-family: Cursive ;
+    font-size: 18px;
+}
+.nav-links li a
+{
+    display: block;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 35px;
+    margin-left: 54px;
+    position: relative;
+}
+.nav-links li a:hover
+{
+    font-size: 17px;
+    color: grey;
+    transition: .3s;
+}
+.nav-links span
+{
+    position: absolute;
+    display: block;
+    margin: 9px;
+    
+}
+.nav-links span :hover
+{
+    color: grey;
+}
+main
+{
+    margin-left: 150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 95%, rgba(80,80,80,1) 100%);
+}
+
+.header-top {
+    padding: 2rem 0;
+}
+
+.header-top h1 {
+    color: white;
+}
+
+ul.menu {
+    margin-top: 1rem;
+    display: flex;
+    font-size: 12px;
+    list-style: none;
+}
+
+ul.menu li {
+    margin: 2rem;
+}
+
+ul.menu li a {
+    color: rgb(121,121,121);
+    text-decoration: none;
+    transition: ease-in-out;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent ;
+}
+
+ul.menu li a:hover {
+    color: white;
+    border-bottom: 3px solid green;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 3px solid rgb(85,85,85);
+    padding-bottom: 2rem;
+}
+
+.section-title .sec-l {
+    margin-top: 10px;
+    color: rgb(228, 228, 228);
+    
+}
+.sec-etc  {
+    visibility: hidden;
+    color: silver;
+    margin-right: 1rem;
+}
+
+
+.sec-r a {
+    color: silver;
+    margin-right: 1rem;
+}
+
+.section-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.sec-items {
+    color: white;
+    font-size: 15px;
+}
+
+.sec-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec-info{
+    margin-top: 0.2rem;
+}
+.sec-info h3 {
+    margin: .5rem 0;
+}
+
+    .sec-info p {
+        color: rgb(121,121,121);
+    }
+
+footer {
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+}
+.footer-grid {
+    padding-top: 3rem;
+    border-top: 1px solid rgb(85,85,85);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.footer-items img {
+    width: 68%;
+}
+.footer-items p {
+    color: rgb(121,121,121);
+    font-size: 14px;
+    margin-top: .5rem;
+}
+
+.footer-image {
+    position: relative;
+}
+.footer-image img {
+    filter: opacity(40%);
+}
+
+.footer-image h2 {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+@media screen and (max-width:1417px)
+{
+    .listening4
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:1100px)
+{ 
+    .line
+    {
+        width: 30px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        margin: 5px;
+    }
+    nav
+    {
+        position: relative;
+    }
+    nav .hamburger
+    {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20px;
+        z-index: 2;
+    }
+    nav .nav-bar
+    {
+        opacity: 1;
+        z-index: 1;
+        position: fixed;
+        background-color: grey;
+        height: 100%;
+        width: 100%;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events:none;
+    }
+    nav .nav-bar.open
+    {
+        clip-path: circle(1200px at 100% -20%);
+        -webkit-clip-path: circle(1200px at 100% -20%);
+        pointer-events:all;
+    }
+    nav .nav-bar .login
+    {
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+    .login .signup
+    {
+        margin-left: -70px;
+        margin-top: 200px;
+        padding-left: 10px;
+    }
+    .login .btn
+    {
+        margin-top: 300px;
+        margin-left: 85px;
+        width: 40%;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        border: none;
+        padding: 10px 20px;;
+        cursor: pointer;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .nav-links
+    {  
+        position: absolute;
+        background-color: rgb(41, 41, 41);
+        width: 200px;
+        height: 1400px;
+    }
+    .nav-links .logo
+    {
+        margin: 10px;
+        width:30px;
+        height:30px;
+        transition: .2s;
+    }
+    .nav-links .app
+    {
+        height: 1220px;
+        top: 20%;
+        left: 31%;
+    }
+    main .foryourlising
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:50px;
+    }
+    main .foryourlising1
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:450px;
+    }
+    main .foryourlising2
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:850px;
+    }
+    .listening3, .listening4
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:900px)
+{
+    main .foryourlising
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:50px;
+    }
+    main .foryourlising1
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:450px;
+    }
+    main .foryourlising2
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:850px;
+    }
+    .listening3, .listening4
+    {
+        display: none;
+    }
+    .nav-links
+    {  
+        height: 1220px;
+    }
+}    

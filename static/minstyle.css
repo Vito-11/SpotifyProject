@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(51, 51, 51);
+}
+nav
+{
+    position: relative;
+}
+nav .nav-bar
+{
+    width: 85%;
+    height: 50px;
+    background-color: gray;
+    float: right;
+    opacity: .8;
+    margin-left: auto;
+}
+nav .nav-bar .login
+{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: 400px;
+}
+.login ul
+{
+    list-style: none;
+}
+.login ul li a
+{
+    text-decoration: none;
+}
+.login .signup
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: 300px;
+}
+.login .signup:hover
+{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    transition: .3s;
+}
+.login .btn
+{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login .btn:hover
+{
+    background-color:rgb(212, 212, 212) ;
+    color: rgb(87, 87, 87);
+    font-size: 17px;
+    transition: .3s;
+}
+.nav-links
+{  
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    width: 275px;
+    height: 835px;
+}
+.nav-links ul
+{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-links .logo
+{
+    margin-left: -20px;
+    margin-top: 10px;
+    width:45px;
+    height: 45px;
+}
+.nav-links .app
+{
+    top: 16%;
+    position: absolute;
+    left: 15%;
+    color: rgb(255, 255, 255);
+    font-family: Cursive ;
+    font-size: 28px;
+}
+.nav-links li a
+{
+    display: block;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 35px;
+    margin-left: 54px;
+    position: relative;
+}
+.nav-links li a:hover
+{
+    font-size: 17px;
+    color: grey;
+    transition: .3s;
+}
+.nav-links span
+{
+    position: absolute;
+    display: block;
+    margin: 9px;
+    
+}
+.nav-links span :hover
+{
+    color: grey;
+}
+main
+{
+    position: relative;
+}
+main .foryourlising
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    position: absolute;
+    left:20%;
+    top:50px;
+}
+.foryourlising ul
+{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.foryourlising ul:hover
+{
+    text-decoration: underline;
+    transition: .2s ease;
+}
+.foryourlising li a
+{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+.foryourlising h1
+{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+}
+main .container
+{
+    width: 100%;
+    height: 20%;
+}
+main article
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+main article .listening
+{
+    background-color: rgb(56, 56, 56) ;
+    position: relative;
+}
+main article .listening i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening2
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-left: 67px;
+    position: relative;
+}
+main article .listening2 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening3
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-left: 67px;
+    position: relative;
+}
+main article .listening3 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening4
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-left: 67px;
+    position: relative;
+}
+main article .listening4 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening5
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-top: 20px;
+    position: relative;
+}
+main article .listening5 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening6
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-top: 20px;
+    margin-left: 67px;
+    position: relative;
+}
+main article .listening6 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article .listening7
+{
+    background-color: rgb(56, 56, 56) ;
+    margin-top: 10px;
+    margin-left: 67px;
+    position: relative;
+}
+main article .listening7 i
+{
+    background-color:rgba(0, 0, 0, 0);
+    visibility: hidden;
+    color: rgb(24, 180, 24);
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top:30%
+}
+main article h2
+{
+    margin-left: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px gray ;
+}
+main article p
+{
+    margin-left: 10px;
+    padding: 5px;
+    letter-spacing: .1ch;
+    font-size: 15px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+main .foryourlising1
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    position: absolute;
+    left:20%;
+    top:450px;
+}
+.foryourlising1 ul
+{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.foryourlising1 ul:hover
+{
+    text-decoration: underline;
+    transition: .2s ease;
+}
+.foryourlising1 li a
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+main .foryourlising2
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    position: absolute;
+    left:20%;
+    top:850px;
+}
+.foryourlising2 ul
+{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.foryourlising2 ul:hover
+{
+    text-decoration: underline;
+    transition: .2s ease;
+}
+.foryourlising2 li a
+{
+    background-color:rgba(32, 32, 32, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+main article :hover i,
+main article .listening:hover
+{
+    background-color:rgba(32, 32, 32, 0);
+    visibility: visible;
+    cursor: pointer;
+    opacity: .85;
+    transition: .3s ease-in;
+}
+main .listening2:hover i,
+main article .listening2:hover
+{
+    background-color:rgba(32, 32, 32, 0);
+    visibility: visible;
+    cursor: pointer;
+    opacity: .85;
+    transition: .3s ease-in;
+}
+main .listening3:hover,
+main article .listening3 i:hover
+{
+    visibility: visible;
+    opacity: .8.5;
+    background-color:rgba(32, 32, 32, 0);
+    cursor: pointer;
+    transition: .3s ease-in;
+    text-shadow: black 1.5px 1.5px;
+}
+@media screen and (max-width:1417px)
+{
+    
+    .listening4
+    {
+        display: none;
+    }
+    main .foryourlising
+    {
+        left:27%;
+    }
+        main article .listening2
+    {
+        margin-left: 37px;
+    }
+    main article .listening3
+    {
+        margin-left: 37px;
+    }
+    main .foryourlising1
+    {
+        left:27%;
+    }
+        main article .listening2
+    {
+        margin-left: 37px;
+    }
+    main article .listening3
+    {
+        margin-left: 37px;
+    }
+        main .foryourlising2
+    {
+        left:27%;
+    }
+        main article .listening2
+    {
+        margin-left: 37px;
+    }
+    main article .listening3
+    {
+        margin-left: 37px;
+    }
+}
+@media screen and (max-width:1100px)
+{
+    main .foryourlising, main .foryourlising1, main .foryourlising2
+    {
+        left:27%;
+    }
+        main article .listening2
+    {
+        margin-left: 17px;
+    }
+    main article .listening3
+    {
+        margin-left: 17px;
+    }
+    .line
+    {
+        width: 30px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        margin: 5px;
+    }
+    nav
+    {
+        position: relative;
+    }
+    nav .hamburger
+    {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20px;
+        z-index: 2;
+    }
+    nav .nav-bar
+    {
+        opacity: 1;
+        z-index: 1;
+        position: fixed;
+        background-color: rgba(80, 80, 80, 0.863);
+        height: 100%;
+        width: 100%;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events:none;
+    }
+    nav .nav-bar.open
+    {
+        clip-path: circle(1200px at 100% -20%);
+        -webkit-clip-path: circle(1200px at 100% -20%);
+        pointer-events:all;
+    }
+    nav .nav-bar .login
+    {
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+    .login .signup
+    {
+        margin-left: -70px;
+        margin-top: 200px;
+        padding-left: 10px;
+    }
+    .login .btn
+    {
+        margin-top: 300px;
+        margin-left: 85px;
+        width: 40%;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        border: none;
+        padding: 10px 20px;;
+        cursor: pointer;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .nav-links
+    {  
+        position: absolute;
+        background-color: rgb(41, 41, 41);
+        width: 200px;
+        height: 1310px;
+        transition: ease-in-out .2s;
+    }
+    .nav-links .logo
+    {
+        margin: 10px;
+        width:30px;
+        height:30px;
+        transition: .2s;
+    }
+    .nav-links .app
+    {
+        font-size: 20px;
+        top: 20%;
+        left: 31%;
+    }
+    main .foryourlising
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:50px;
+    }
+    main .foryourlising1
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:450px;
+    }
+    main .foryourlising2
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:22%;
+        top:850px;
+    }
+    .listening4
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:900px)
+{
+    main .foryourlising
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:50px;
+    }
+    main .foryourlising1
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:450px;
+    }
+    main .foryourlising2
+    {
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left:30%;
+        top:850px;
+    }
+    .listening3, .listening4
+    {
+        display: none;
+    }
+    .nav-links
+    {  
+        height: 1220px;
+    }
+}    
