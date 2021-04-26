@@ -1,4 +1,6 @@
 from flask import *
+from PIL import Image
+from . import avatars
 from flask_mail import Mail, Message
 from . import __init__
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -51,12 +53,22 @@ def signup_post():
     y,m,d = dob.split('-')
     dob = datetime(int(y), int(m), int(d))
     gender =  request.form['gender']
+    f = request.files.get('file')
+
+    if not f:
+    #resizing
+        raw_filename = ""
+    else:
+        image = Image.open(f)
+        image.thumbnail((150, 150))
+        raw_filename = avatars.save_avatar(image)
+
     session['email']=request.form['email']
     user = User.query.filter_by(email=email).first() # if this returns a user, then the email already exists in database
     if user: # if a user is found, we want to redirect back to signup page so user can try again with another email
         flash('Email address already exists')
         return redirect(url_for('auth.signup'))
-    new_user=User(email=email,password=generate_password_hash(password,method='sha256'),name=name,dob=dob,gender=gender)
+    new_user=User(email=email,password=generate_password_hash(password,method='sha256'),name=name,dob=dob,gender=gender,profilepic=raw_filename)
     db.session.add(new_user)
     db.session.commit()
     flash('Your account has been created successfully. You can now login')

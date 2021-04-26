@@ -10,15 +10,18 @@ body
 nav
 {
     position: relative;
+
 }
 nav .nav-bar
 {
-    width: 85%;
+    width: 100%;
     height: 50px;
     background-color: gray;
     float: right;
     opacity: .8;
-    margin-left: auto;
+    justify-content: space-around;
+    padding-right: 20px;
+
 }
 nav .nav-bar .login
 {
@@ -26,12 +29,15 @@ nav .nav-bar .login
     justify-content: space-around;
     align-items: center;
     display: flex;
-    list-style: none;
-    margin-left: 400px;
+    padding: 1%;
 }
 .login ul
 {
+    justify-content: space-between;
     list-style: none;
+    text-decoration: none;
+    align-items: center;
+    margin-left:auto;
 }
 .login ul li a
 {
@@ -44,9 +50,7 @@ nav .nav-bar .login
     height: 100%;
     justify-content: space-around;
     align-items: center;
-    display: flex;
-    list-style: none;
-    margin-left: 300px;
+    margin: 60px;
 }
 .login .signup:hover
 {
@@ -65,6 +69,7 @@ nav .nav-bar .login
     border-radius: 5px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 60px;
 }
 .login .btn:hover
 {
@@ -74,16 +79,11 @@ nav .nav-bar .login
     transition: .3s;
 }
 .nav-links
-{  
-    position: absolute;
+{
+    position: fixed;
     background-color: rgb(39, 39, 39);
     width: 275px;
-    height: 835px;
-}
-.nav-links ul
-{
-    list-style: none;
-    text-decoration: none;
+    height: 100%;
 }
 .nav-links .logo
 {
@@ -98,13 +98,13 @@ nav .nav-bar .login
     position: absolute;
     left: 15%;
     color: rgb(255, 255, 255);
-    font-family: Cursive ;
+    font-family: Cursive;
     font-size: 28px;
 }
 .nav-links li a
 {
     display: block;
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-bottom: 35px;
@@ -122,11 +122,73 @@ nav .nav-bar .login
     position: absolute;
     display: block;
     margin: 9px;
-    
+
+}
+.nav-links .login-first
+{
+    position: relative;
+    margin: 15px;
+}
+.nav-links .login-first ul
+{
+    list-style: none;
+}
+.nav-links .login-first li a
+{
+    text-decoration: none;
+}
+.nav-links .login-first i
+{
+    font-size: 19px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: white;
+    position: absolute;
+    display: block;
 }
 .nav-links span :hover
 {
     color: grey;
+}
+.nav-links .library-links
+{
+    position: relative;
+}
+main .pop-up
+{
+    display: none;
+    transition: .3s ease;
+    margin: 10px;
+    z-index: 10;
+    width: 20%;
+    left: 15%;
+    top: 25vh;
+    position: absolute;
+    background-color: rgb(87, 87, 87);
+    border-radius: 10%;
+    padding: 10px;
+    color:  white;
+}
+.pop-up h4
+{
+    font-size: 20px;
+}
+.pop-up p
+{
+    margin: 5px;
+    padding: 5px;
+    word-wrap: break-word;
+    font-size: 18px;
+}
+.pop-up button
+{
+    cursor: pointer;
+    overflow-wrap: normal;
+    padding: 10px;
+    width:25%;
+    margin: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 15px;
 }
 main
 {
@@ -393,9 +455,102 @@ main article .listening3 i:hover
     transition: .3s ease-in;
     text-shadow: black 1.5px 1.5px;
 }
+main .media-player
+{
+    left: 19.2%;
+    bottom: 0;
+    visibility: hidden;
+    padding-top: .5%;
+    justify-content: space-around;
+    height: 10%;
+    width: 80.5%;
+    background-color: rgba(34, 34, 34, 0.979);
+    position: fixed;
+    color: rgb(68, 136, 0);
+    border-radius: 20px;
+    display: flex;
+}
+.media-player img
+{
+    height: 100%;
+    width: inherit;
+    border-radius: 50%;
+    box-shadow: .5px 1px white;
+}
+.media-player .media-info
+{
+    position: relative;
+}
+.media-info h6
+{
+    font-size: 20px;
+}
+.media-player .songinfo
+{
+    top: 10%;
+    left: 110%;
+    position: absolute;
+    align-items: center;
+    color: white;
+}
+main .media-player i
+{
+    margin-top: 30px;
+}
+main .media-player span
+{
+    cursor: pointer;
+}
+.media-player .volume input[type="range"]
+{
+    display: none;
+    -webkit-appearance: none;
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+    outline: none;
+    margin: 5px 15px;
+    height: 5px;
+    transition: .3s ease;
+}
+.media-player .volume input[type="range"]::-webkit-slider-thumb
+{
+
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+}
+main .media-player :hover i
+{
+    color:rgb(68, 68, 68);
+}
+main .media-player i .reset
+{
+    color:white;
+}
+.media-player .progress-container
+{
+    width:63%;
+    background-color:rgb(65, 64, 64);
+    cursor:pointer;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10;
+    left: 33%;
+}
+.progress-container .progress
+{
+    width: 0%;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    transition: width .1s linear;
+}
 @media screen and (max-width:1417px)
 {
-    
+
     .listening4
     {
         display: none;
@@ -468,7 +623,7 @@ main article .listening3 i:hover
         cursor: pointer;
         right: 5%;
         top: 20px;
-        z-index: 2;
+        z-index: 20;
     }
     nav .nav-bar
     {
@@ -517,7 +672,7 @@ main article .listening3 i:hover
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .nav-links
-    {  
+    {
         position: absolute;
         background-color: rgb(41, 41, 41);
         width: 200px;
@@ -597,7 +752,7 @@ main article .listening3 i:hover
         display: none;
     }
     .nav-links
-    {  
+    {
         height: 1220px;
     }
-}    
+}

@@ -83,3 +83,29 @@ function validateForm(form)
   else
     return false;
 }
+
+var file = document.getElementById('upload');
+file.onchange = function(e) {
+  var ext = this.value.match(/\.([^\.]+)$/)[1];
+  switch (ext) {
+    case 'jpg':
+    case 'bmp':
+    case 'png':
+    case 'tif':
+      alert('Allowed');
+      break;
+    default:
+      alert('Not allowed');
+      this.value = '';
+  }
+};
+
+function validateUpdateForm(form)
+{
+  var check_dob = check2();
+  var check_age = ageCalculator();
+  if (check_dob == true && check_age == true)
+    return true;
+  else
+    return false;
+}

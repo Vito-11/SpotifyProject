@@ -24,7 +24,7 @@
                 <button class="social-icons" type="button"><a href="#"><i class="fa fa-phone"></a></i></button>
             </div>
           </form>
-            <button class="red" type="button"><i class="fa fa-unlock-alt"><a href="#"></i>Forgot Password?</a></button>
+            <button class="red" type="button"><i class="fa fa-unlock-alt"><a href="{{ url_for('main.reset_request') }}"></i>Forgot Password?</a></button>
             <p class="no-account">Don't have an account?</p>
             <button class="red" type="button"><a href="{{ url_for('auth.signup') }}"></i>SIGN UP FOR SPOTIFY</a></button>
         </div>

@@ -23,7 +23,7 @@
                 <button class="btn" onClick="location='Login1.html';">Log in</button>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html"><img src=logo.png class="logo"><p class="app">Spotify</p></a></li>
+            <li><a href="{{ url_for('main.index') }}"><img src=logo.png class="logo"><p class="app">Spotify</p></a></li>
             <li class="home-links"><span><i class="fas fa-home" style="color:white;"></i></span><a href="index.html" >Home</a></li>
             <li class="search-links"><span><i class="fas fa-search" style="color:white;"></i></span><a href="#" > Search</a></li>
             <li class="library-links"><span><i class="fas fa-photo-video" style="color:white;"></i></span><a href="#" >Your Library</a></li>
@@ -65,7 +65,7 @@
                             <p>Catch the latest<br>instrumental music.</p>
                         </div>
                     </article>
-                </div>    
+                </div>
         </div>
     </main>
         <script src="app.js"></script>
